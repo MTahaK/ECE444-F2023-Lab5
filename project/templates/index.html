@@ -10,6 +10,8 @@
     <div class="page">
         <h1>Flaskr-TDD</h1>
 
+        <a class="btn btn-info" role="button" href="{{ url_for('search') }}">Search</a>
+        
         <div class="metanav">
             {% if not session.logged_in %}
             <a href="{{ url_for('login') }}">log in</a>
